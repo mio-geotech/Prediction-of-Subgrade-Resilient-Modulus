@@ -82,7 +82,7 @@ The expected predictor columns are:
 - LL
 - PI
 - wopt
-- rho_d_max
+- ρdmax
 - CBRd
 - CBRw
 - Ec
