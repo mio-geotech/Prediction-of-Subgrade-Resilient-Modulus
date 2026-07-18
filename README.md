@@ -25,10 +25,17 @@ The repository also includes the procedures used for:
 
 ## Repository contents
 
-- `MR_Gradient_Boosting_Models.py`: model training, prediction, and performance evaluation.
-- `SHAP_Analysis.py`: SHAP-based feature-importance and model-interpretation analyses.
-- `requirements.txt`: required Python packages.
-- `data/README.md`: information regarding dataset availability.
+- `01_Model_Training_Evaluation_and_SHAP.py`  
+Implements data preprocessing, training and testing of LightGBM, CatBoost, XGBoost, and GBM models, calculation of statistical performance metrics, export of predictions, and global SHAP bar and summary analyses.
+
+- `02_SHAP_Dependence_Analysis.ipynb`  
+Generates the SHAP dependence plots for the five most influential input variables presented in the manuscript.
+
+- `03_Five_Fold_Cross_Validation.ipynb`  
+Performs the five-fold cross-validation analysis and reports fold-specific and average model-performance metrics.
+
+- `04_GBM_Reduced_Feature_Model.py`  
+Implements the reduced-input GBM model developed using the five SHAP-selected predictor variables.
 
 ## Data availability
 
