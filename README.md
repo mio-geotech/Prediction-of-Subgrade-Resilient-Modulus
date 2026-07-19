@@ -69,6 +69,7 @@ The analyses were conducted using Python and the following principal libraries:
 The required packages are listed in `requirements.txt`.
 
 Execution environment
+
 These scripts were developed and executed in the Google Colab environment. Therefore, Google Colab-specific commands (e.g., package installation, interactive file upload, and automatic file download) have intentionally been retained to preserve the original research workflow.
 
 ## Usage
