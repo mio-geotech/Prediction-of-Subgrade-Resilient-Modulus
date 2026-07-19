@@ -55,14 +55,16 @@ A fixed random seed (`random_state = 42`) was used to improve reproducibility.
 
 The analyses were conducted using Python and the following principal libraries:
 
-- NumPy
+- numpy
 - pandas
+- matplotlib
 - scikit-learn
-- XGBoost
-- LightGBM
-- CatBoost
-- SHAP
-- Matplotlib
+- lightgbm
+- catboost
+- xgboost
+- shap
+- openpyxl
+- xlsxwriter
 
 The required packages are listed in `requirements.txt`.
 
