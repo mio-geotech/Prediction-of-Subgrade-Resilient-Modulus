@@ -1,8 +1,6 @@
 # Prediction of Subgrade Resilient Modulus for Compacted Soils Using a Hybrid Dataset and Gradient Boosting Models
 
-This repository contains the Python source codes accompanying the manuscript:
-
-**“Prediction of Subgrade Resilient Modulus for Compacted Soils Using a Hybrid Dataset and Gradient Boosting Models”**
+This repository provides the Python implementation accompanying the manuscript entitled "Prediction of Subgrade Resilient Modulus for Compacted Soils Using a Hybrid Dataset and Gradient Boosting Models." The repository includes all scripts required to reproduce the machine learning analyses presented in the study, except for the experimental dataset, which cannot be publicly redistributed.
 
 ## Overview
 
@@ -59,6 +57,7 @@ The analyses were conducted using Python and the following principal libraries:
 - pandas
 - matplotlib
 - scikit-learn
+- scipy
 - lightgbm
 - catboost
 - xgboost
