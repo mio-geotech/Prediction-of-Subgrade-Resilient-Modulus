@@ -7,3 +7,4 @@ lightgbm
 catboost
 shap
 openpyxl
+xlsxwriter
