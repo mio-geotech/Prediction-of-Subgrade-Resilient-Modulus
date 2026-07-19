@@ -28,13 +28,13 @@ The repository also includes the procedures used for:
 - `01_Model_Training_Evaluation_and_SHAP.py`  
 Implements data preprocessing, training and testing of LightGBM, CatBoost, XGBoost, and GBM models, calculation of statistical performance metrics, export of predictions, and global SHAP bar and summary analyses.
 
-- `02_SHAP_Dependence_Analysis.ipynb`  
+- `02_SHAP_Analysis_and_Dependence_Plots.py`  
 Generates the SHAP dependence plots for the five most influential input variables presented in the manuscript.
 
-- `03_Five_Fold_Cross_Validation.ipynb`  
+- `03_Five_Fold_Cross_Validation.py`  
 Performs the five-fold cross-validation analysis and reports fold-specific and average model-performance metrics.
 
-- `04_GBM_Reduced_Feature_Model.py`  
+- `04_GBM_KP.py`  
 Implements the reduced-input GBM model developed using the five SHAP-selected predictor variables.
 
 ## Data availability
@@ -68,12 +68,15 @@ The analyses were conducted using Python and the following principal libraries:
 
 The required packages are listed in `requirements.txt`.
 
+Execution environment
+These scripts were developed and executed in the Google Colab environment. Therefore, Google Colab-specific commands (e.g., package installation, interactive file upload, and automatic file download) have intentionally been retained to preserve the original research workflow.
+
 ## Usage
 
-1. Prepare an input spreadsheet containing the required predictor variables and the target MR values.
-2. Update the input file path or upload section in the Python script.
-3. Run the model-training script.
-4. Run the SHAP-analysis script after the models have been fitted.
+1. Open the script in Google Colab.
+2. Execute all cells.
+3. Upload the requested Excel dataset when prompted.
+4. The script automatically exports the generated outputs.
 
 The expected predictor columns are:
 
@@ -84,7 +87,7 @@ The expected predictor columns are:
 - LL
 - PI
 - wopt
-- ρdmax
+- ρd,max
 - CBRd
 - CBRw
 - Ec
@@ -95,8 +98,8 @@ The target variable is:
 
 ## Citation
 
-Please cite the associated manuscript when using or adapting the source codes contained in this repository.
+If you use the source codes provided in this repository, please cite the associated journal article after publication.
 
 ## Contact
 
-For questions concerning the implementation or supporting information, please contact the corresponding author.
+Corresponding author
