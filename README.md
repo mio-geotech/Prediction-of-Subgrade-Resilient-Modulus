@@ -18,7 +18,7 @@ The repository also includes the procedures used for:
 - training and testing data separation;
 - model training and prediction;
 - statistical performance evaluation;
-- five-fold cross-validation;
+- Monte Carlo cross-validation;
 - SHAP-based model interpretation.
 
 ## Repository contents
@@ -29,8 +29,8 @@ Implements data preprocessing, training and testing of LightGBM, CatBoost, XGBoo
 - `02_SHAP_Analysis_and_Dependence_Plots.py`  
 Generates the SHAP dependence plots for the five most influential input variables presented in the manuscript.
 
-- `03_Five_Fold_Cross_Validation.py`  
-Performs the five-fold cross-validation analysis and reports fold-specific and average model-performance metrics.
+- `03_Monte_Carlo_Cross_Validation.py`  
+Repeated Monte Carlo cross-validation using 1,000 random 80/20 train-test splits for robustness evaluation.
 
 - `04_GBM_KP.py`  
 Implements the reduced-input GBM model developed using the five SHAP-selected predictor variables.
